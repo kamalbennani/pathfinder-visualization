@@ -4,7 +4,7 @@ import { range, sample, chain, find, compact } from "lodash";
 import { Node, INode } from "./node";
 
 export const NB_ROWS = 25;
-export const NB_ITEM_PER_ROWS = 40;
+export const NB_ITEM_PER_ROWS = window.screen.width / 32;
 
 export const GridModel = types
   .model("Grid", {
